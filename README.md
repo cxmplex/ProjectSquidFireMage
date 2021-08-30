@@ -4,12 +4,12 @@
 - Fully deobfuscated including original comments in code.
 
 
-- Ran by known scammers Xen (not real Xen either) and Larry.
-- Exit scammed after EWT shutdown by pretending to have EWT source code .
+- Ran by known scammers Xen (not real Xen either) and Larry
+- Exit scammed after EWT shutdown by pretending to have EWT source code
 
-- Full of hilariously bad code, especially anywhere you see "I'm a genius" in one of the comments.
+- Full of hilariously bad code, especially anywhere you see "I'm a genius" in one of the comments
 
-- This is all put into one file (zzz.lua), I have not broken apart the addon because it would take too much time.
+- This is all put into one file (zzz.lua), I have not broken apart the addon because it would take too much time
 
 Things you'll find hilarious
 
@@ -21,11 +21,11 @@ Things you'll find hilarious
 - Pointless reiteration of things like unitauras for the 50 million different checks he does (this is where you should have actually used proper caching)
 - Perhaps the worst authentication ever made
 - Laughable AOE circle prediction (often will place the edge of the AOE barely on the target instead of centering or predicting properly)
-- Esoteric code does not make you smarter "Xen", it just makes you edgy.
+- Esoteric code does not make you smarter "Xen", it just makes you edgy
 
 Things that are actually good
 
 - Decent 1:1ness with SimC (you'll see he commented the SimC logic and implemented it below it)
-- Excellent fire mage logic (has some major flaws in prediction, as well as performance, lots of magic numbers with 0 explanation provided).
-- Pretty okay arena helpers (in terms of function offered to user, alerts, drawings, etc). Bug factory however for a lot of the auto-functions.
+- Excellent fire mage logic (has some major flaws in prediction, as well as performance, lots of magic numbers with 0 explanation provided)
+- Pretty okay arena helpers (in terms of function offered to user, alerts, drawings, etc). Bug factory however for a lot of the auto-functions
 - Good GUI and nice custom textures (some 'stolen' media and code but doesn't really matter)
