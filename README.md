@@ -1,6 +1,6 @@
 # ProjectSquidFireMage
 
-- Dumped project squid fire mage (not by me) (and the other unfinished rotations like rogue), ported to minibot (now defunc) by me. 
+- Dumped project squid fire mage (not by me) (and the other unfinished rotations like rogue), ported to minibot and turned into a working addon (now defunc) by me. 
 - Fully deobfuscated including original comments in code.
 
 
