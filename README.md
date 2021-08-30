@@ -1,6 +1,6 @@
 # ProjectSquidFireMage
 
-- Dumped project squid fire mage, ported to minibot (now defunc) by me.
+- Dumped project squid fire mage (and the other unfinished rotations like rogue), ported to minibot (now defunc) by me.
 
 
 - Ran by known scammers Xen (not real Xen either) and Larry.
