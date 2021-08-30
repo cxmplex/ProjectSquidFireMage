@@ -1,0 +1,273 @@
+  <Bindings>
+
+	<!-- General -->
+    <Binding name="Squid Toggler" description="Toggle the Squid" header="SQUID" category="project squid">
+      SquidToggle();
+    </Binding>
+
+    <Binding name="Burst Key" description="Press to activate burst mode" category="project squid">
+      SquidBurst();
+    </Binding>
+
+    <Binding name="Dmg Key (Healers)" description="Hold to do damage as a healer" category="project squid" runOnUp="true">
+      if keystate == "down" then healer_dmg_key = true; else healer_dmg_key = false; end
+    </Binding>
+
+	<!-- End General binds -->
+
+	<!-- Mage -->
+
+    <Binding name="Block Key" description="Hold to Ice Block ASAP." header="MAGE" category="project squid" runOnUp="true">
+      if keystate == "down" then block_key = true; else block_key = false; end
+    </Binding>
+
+    <Binding name="Meteor / Orb" description="Hold to meteor / orb your target." category="project squid" runOnUp="true">
+      if keystate == "down" then meteor_key = true; else meteor_key = false; end
+    </Binding>
+
+    <Binding name="Auto CC Toggle (PvP)" description="Toggle auto CC usage in PvP" category="project squid">
+      if set_squid_var then 
+        set_squid_var("Auto CC", not get_squid_var("Auto CC"), "checkbox") 
+        if get_squid_var("Auto CC") then
+          green_line_test = GetTime()
+          Squid_Alert("|cFFdecbebAuto CC Enabled",nil,nil,.35,118)
+        else
+          red_line_test = GetTime()
+          Squid_Alert("|cFFca2aa5Auto CC Disabled",nil,nil,.35,118)
+        end
+      end
+    </Binding>
+
+    <Binding name="Poly > Gpy > Ring Setup (OLD)" description="Kill" category="project squid" runOnUp="true">
+      if keystate == "down" then killshot_key = true; else killshot_key = false; end
+    </Binding>
+
+    <Binding name="CC Healer" description="cc the enemy healer, using polymorph, ring and db." category="project squid" runOnUp="true">
+  		if keystate == "down" then cc_healer_key = true; else cc_healer_key = false; end
+  	</Binding>
+
+  	<Binding name="CC Focus" description="cc your focus target, using polymorph, ring and db." category="project squid" runOnUp="true">
+  		if keystate == "down" then cc_focus_key = true; else cc_focus_key = false; end
+  	</Binding>
+
+    <Binding name="CC Off-Target" description="cc enemy off target (not focus or target), using polymorph, ring and db." category="project squid" runOnUp="true">
+  		if keystate == "down" then cc_offtarget_key = true; else cc_offtarget_key = false; end
+  	</Binding>
+
+    <Binding name="Blink -> DB Healer" description="Blink if necessary then Dragon's Breath the Enemy Healer" category="project squid" runOnUp="true">
+      if keystate == "down" then blink_db_healer = true; else blink_db_healer = false; end
+    </Binding>
+
+    <Binding name="Blink -> DB Focus" description="Blink if necessary then Dragon's Breath Your Focus" category="project squid" runOnUp="true">
+      if keystate == "down" then blink_db_focus = true; else blink_db_focus = false; end
+    </Binding>
+
+    <Binding name="Blink -> DB Target" description="Blink if necessary then Dragon's Breath Your Target" category="project squid" runOnUp="true">
+      if keystate == "down" then blink_db_target = true; else blink_db_target = false; end
+    </Binding>
+
+    <Binding name="Ring of Frost Healer" description="Ring Healer" category="project squid" runOnUp="true">
+      if keystate == "down" then ring_healer_key = true; else ring_healer_key = false; end
+    </Binding>
+
+    <Binding name="Ring of Frost Focus" description="Ring Focus" category="project squid" runOnUp="true">
+      if keystate == "down" then ring_focus_key = true; else ring_focus_key = false; end
+    </Binding>
+
+    <Binding name="Ring of Frost Target" description="Ring Target" category="project squid" runOnUp="true">
+      if keystate == "down" then ring_target_key = true; else ring_target_key = false; end
+    </Binding>
+
+    <Binding name="Combust Toggle (PvE)" description="Toggle auto combustion usage in PvE" category="project squid">
+      SQUID.auto_combust = not SQUID.auto_combust
+      squid_print(not SQUID.auto_combust and "|cffff6060Auto Combustion disabled" or "Auto Combustion enabled")
+      if AlertFrames_Anchor then
+        if SQUID.auto_combust then
+          green_line_test = GetTime()
+          Squid_Alert("|cFFdecbebAuto Combustion Enabled",nil,nil,.35,190319)
+        else
+          red_line_test = GetTime()
+          Squid_Alert("|cFFca2aa5Auto Combustion Disabled",nil,nil,.35,190319)
+        end
+      end
+    </Binding>
+
+    <Binding name="AoE Toggle (PvE)" description="Toggle between single target and auto-aoe." category="project squid">
+      SQUID.single_target = not SQUID.single_target
+      squid_print(SQUID.single_target and "|cffff6060Single Target Only - AoE is disabled" or "Auto AoE Enabled - Rotation will auto AoE")
+      if AlertFrames_Anchor then
+        if SQUID.single_target then
+          red_line_test = GetTime()
+          Squid_Alert("|cFFca2aa5AoE Disabled - Single Target Mode",nil,nil,.35,11366)
+        else 
+          green_line_test = GetTime()
+          Squid_Alert("|cFFdecbebAoE Enabled - Auto AoE Mode",nil,nil,.35,2120)
+        end
+      end
+    </Binding>
+  	
+	<!-- End Mage Bindings -->
+
+  <!-- Rogue -->
+    
+    <Binding name="Cheap Shot Opener" description="Begin cheap shot opener." category="project squid" header="ROGUE">
+        Squid_CheapShot_Opener()
+    </Binding>
+
+    <Binding name="Shadowstrike Opener" description="Begin shadowstrike opener." category="project squid">
+        Squid_Shadowstrike_Opener()
+    </Binding>
+
+    <Binding name="Prepare Focus Swap" description="Prepare a swap to our focus target next go" category="project squid">
+        Squid_FocusSwap()
+    </Binding>
+
+    <Binding name="Prepare Healer Swap" description="Prepare a swap to the healer next go" category="project squid">
+        Squid_HealerSwap()
+    </Binding>
+
+    <Binding name="Cancel Swap" description="Prepare a swap to the healer next go" category="project squid">
+        Squid_CancelSwap()
+    </Binding>
+
+  <!-- End Rogue Bindings -->
+
+  <!-- Warlock -->
+
+    <Binding name="Toggle CDs" description="Helpful for boss situations where you don't want\r\n\to use CDs immediately in boss fights or other situations." category="project squid" header="WARLOCK" runOnUp="false">
+      SQUID.warlock_cds = not SQUID.warlock_cds
+      squid_print(not SQUID.warlock_cds and "|cffff6060Auto CDs disabled" or "Auto CDs enabled")
+      if AlertFrames_Anchor then
+        if SQUID.warlock_cds then
+          green_line_test = GetTime()
+          Squid_Alert("|cFFdecbebAuto CDs Enabled",nil,nil,.35)
+        else
+          red_line_test = GetTime()
+          Squid_Alert("|cFFca2aa5Auto CDs Disabled",nil,nil,.35)
+        end
+      end
+    </Binding>
+
+    <Binding name="No Multi-Dotting" description="Toggle between single target and auto-aoe." category="project squid">
+      SQUID.single_target = not SQUID.single_target
+      squid_print(SQUID.single_target and "|cffff6060Single Target Only - AoE is disabled" or "Auto AoE Enabled - Rotation will auto AoE")
+      if AlertFrames_Anchor then
+        if SQUID.single_target then
+          red_line_test = GetTime()
+          Squid_Alert("|cFFca2aa5AoE Disabled - Single Target Mode",nil,nil,.35,324536)
+        else 
+          green_line_test = GetTime()
+          Squid_Alert("|cFFdecbebAoE Enabled - Auto AoE Mode",nil,nil,.35,324536)
+        end
+      end
+    </Binding>
+
+    <Binding name="Use Covenant Damage Ability" description="" category="project squid" runOnUp="true">
+      warlock_use_covenant_damage();
+    </Binding>
+
+    <Binding name="Curse of Exhaustion Target" description="" category="project squid" runOnUp="true">
+      warlock_exhaust();
+    </Binding>
+
+    <Binding name="Curse of Tongues Target" description="" category="project squid" runOnUp="true">
+      warlock_tongues();
+    </Binding>
+
+    <Binding name="Curse of Weakness Target" description="" category="project squid" runOnUp="true">
+      warlock_weak();
+    </Binding>
+    
+    <Binding name="Coil Focus and Target" description="" category="project squid" runOnUp="true">
+      if keystate == "down" then coil_focus_key = true; else coil_focus_key = false; end
+    </Binding>
+
+    <Binding name="Coil Off-Target and Target" description="" category="project squid" runOnUp="true">
+      if keystate == "down" then coil_ot_key = true; else coil_ot_key = false; end
+    </Binding>
+
+    <Binding name="Shadowfury @ Cursor" description="" category="project squid" runOnUp="true">
+      if keystate == "down" then shadowfury_key = true; else shadowfury_key = false; end
+    </Binding>
+
+    <Binding name="Cataclysm @ Cursor" description="" category="project squid" runOnUp="true">
+      if keystate == "down" then cataclysm_key = true; else cataclysm_key = false; end
+    </Binding>
+
+    <Binding name="Infernal @ Cursor" description="" category="project squid" runOnUp="true">
+      if keystate == "down" then infernal_key = true; else infernal_key = false; end
+    </Binding>
+
+    <Binding name="Gateway @ Cursor" description="" category="project squid" runOnUp="true">
+      if keystate == "down" then gateway_key = true; else gateway_key = false; end
+    </Binding>
+
+  <!-- End Warlock Bindings -->
+
+	<!-- Druid -->
+    <Binding name="Maim Focus" description="Maim your focus target next time you reach 5 cp\r\n\Command expires after 5 sec\r\n\Will leap when ready to maim if out of range"   header="DRUID" category="project squid">
+      squid_queue_focus_maim()
+    </Binding>
+
+    <Binding name="Maim Target" description="Maim your target next time you reach 5 cp\r\n\Command expires after 5 sec\r\n\Will leap when ready to maim if out of range" category="project squid">
+		  squid_queue_target_maim()
+   </Binding>
+
+    <Binding name="Maim Healer" description="Maim healer next time you reach 5 cp\r\n\Command expires after 5 sec\r\n\Will leap when ready to maim if out of range" category="project squid">
+		  squid_queue_healer_maim()
+    </Binding>
+	
+	  <Binding name="Heal (Guardian)" description="Heal all the things" category="project squid" runOnUp="true">
+		  if keystate == "down" then guardian_heal = true; else guardian_heal = nil; end
+    </Binding>
+	
+	<!-- End Druid Bindings -->
+
+  <!-- Hunter -->
+
+    <Binding name="Trap Focus" description="Queue a trap on your focus target" header="HUNTER" category="project squid">
+       squid_trap_focus = GetTime()
+    </Binding>
+
+    <Binding name="Disengage - Friendly Healer" description="Disengage to your healer" category="project squid">
+        disengage_to_unit(ourHealer)
+    </Binding>
+
+    <Binding name="Disengage - Enemy Healer" description="Disengage to enemy healer" category="project squid">
+        disengage_to_unit(theirHealer)
+    </Binding>
+
+    <Binding name="Explosive Trap - Focus" description="Knock your focus target to the lowest + furthest point from his team" category="project squid">
+        explosive_trap_knock(current_focus)
+    </Binding>
+
+    <Binding name="Explosive Trap - Healer" description="Knock the enemy healer to the lowest + furthest point from his team" category="project squid">
+        explosive_trap_knock(theirHealer)
+    </Binding>
+
+
+  <!-- End Hunter -->
+
+  <!-- Demon Hunter -->
+
+    <Binding name="Retreat Forward" description="Vengeful retreat forward" header="DH" category="project squid">
+      RetreatForward()
+    </Binding>
+
+  <!-- End Demon Hunter Bindings -->
+
+    <Binding name="Hoj Healer" description="Hold to HoJ Healer - Will not use into other CC or immunities" header="PALADIN" category="project squid" runOnUp="true">
+      if keystate == "down" then cc_healer_key = true; else cc_healer_key = false; end
+    </Binding>
+
+    <Binding name="Hoj Focus" description="Hold to HoJ Focus - Will not use into other CC or immunities" category="project squid" runOnUp="true">
+      if keystate == "down" then cc_focus_key = true; else cc_focus_key = false; end
+    </Binding>
+
+  <!-- Paladin -->
+
+
+
+  <!-- End Paladin -->
+
+ </Bindings>

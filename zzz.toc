@@ -1,0 +1,17 @@
+## Interface: 80300
+
+## Title: zzz
+
+## Notes:
+
+## Author: zzz
+
+## Version: 1
+
+## DefaultState: Disabled
+
+## SavedVariables: Squid_Savedvars
+
+## Core
+bindings.xml
+zzz.lua
