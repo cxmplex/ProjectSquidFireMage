@@ -15,4 +15,4 @@ Things you'll find hilarious
 - Heavy copy pasting from Larry's scam rotations
 - Magic numbers and logic for basically everything
 - Massive rotation runner (why isn't this split into various components, who knows).
-- Pointless reiteration of things like unitauras (this is where you should have actually used proper caching).
+- Pointless reiteration of things like unitauras for the 50 million different checks he does (this is where you should have actually used proper caching).
