@@ -26,4 +26,5 @@ Things that are actually good
 
 - Decent 1:1ness with SimC (you'll see he commented the SimC logic and implemented it below it)
 - Pretty okay fire mage logic
-- Pretty GUI and nice custom textures (some 'stolen' media and code but doesn't really matter)
+- Pretty okay arena helpers
+- Pretty good GUI and nice custom textures (some 'stolen' media and code but doesn't really matter)
