@@ -21,6 +21,7 @@ Things you'll find hilarious
 - Pointless reiteration of things like unitauras for the 50 million different checks he does (this is where you should have actually used proper caching)
 - Perhaps the worst authentication ever made
 - Laughable AOE circle prediction (often will place the edge of the AOE barely on the target instead of centering or predicting properly)
+- Esoteric code does not make you smarter "Xen", it just makes you edgy.
 
 Things that are actually good
 
