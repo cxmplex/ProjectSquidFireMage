@@ -9,6 +9,8 @@
 
 - Full of hilariously bad code, especially anywhere you see "I'm a genius" in one of the comments.
 
+- This is all put into one file (zzz.lua), I have not broken apart the addon because it would take too much time.
+
 Things you'll find hilarious
 
 - Calls himself a genius for creating a caching layer on top of already cached functions
