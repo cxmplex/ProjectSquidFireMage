@@ -6,7 +6,7 @@
 - Ran by known scammers Xen (not real Xen either) and Larry.
 - Exit scammed after EWT shutdown by pretending to have EWT source code 
 
-- Full of hilariously bad coe, especially anywhere you see "I'm a genius" in one of the comments.
+- Full of hilariously bad code, especially anywhere you see "I'm a genius" in one of the comments.
 
 Things you'll find hilarious
 
