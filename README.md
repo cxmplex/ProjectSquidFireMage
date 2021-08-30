@@ -25,6 +25,6 @@ Things you'll find hilarious
 Things that are actually good
 
 - Decent 1:1ness with SimC (you'll see he commented the SimC logic and implemented it below it)
-- Pretty okay fire mage logic
-- Pretty okay arena helpers
-- Pretty good GUI and nice custom textures (some 'stolen' media and code but doesn't really matter)
+- Excellent fire mage logic (has some major flaws in prediction, as well as performance, lots of magic numbers with 0 explanation provided)
+- Pretty okay arena helpers (in terms of function offered to user, alerts, drawings, etc)
+- Good GUI and nice custom textures (some 'stolen' media and code but doesn't really matter)
