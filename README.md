@@ -26,4 +26,4 @@ Things that are actually good
 
 - Near 1:1 SimC rotations
 - Pretty okay fire mage logic
-- Pretty GUI and nice custom textures (some stolen)
+- Pretty GUI and nice custom textures (some 'stolen' but doesn't really matter)
