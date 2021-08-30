@@ -17,4 +17,4 @@ Things you'll find hilarious
 - Massive rotation runner (why isn't this split into various components, who knows)
 - Pointless reiteration of things like unitauras for the 50 million different checks he does (this is where you should have actually used proper caching)
 - Perhaps the worst authentication ever made
-- Laughable AOE circle prediction (often will place the edge of the AOE on the target instead of centering or predicting properly)
+- Laughable AOE circle prediction (often will place the edge of the AOE barely on the target instead of centering or predicting properly)
