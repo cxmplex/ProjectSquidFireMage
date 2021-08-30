@@ -24,6 +24,6 @@ Things you'll find hilarious
 
 Things that are actually good
 
-- Near 1:1 SimC rotations
+- Decent 1:1ness with SimC (you'll see he commented the SimC logic and implemented it below it)
 - Pretty okay fire mage logic
 - Pretty GUI and nice custom textures (some 'stolen' media and code but doesn't really matter)
