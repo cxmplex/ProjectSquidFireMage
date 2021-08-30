@@ -1,10 +1,11 @@
 # ProjectSquidFireMage
 
-- Dumped project squid fire mage (and the other unfinished rotations like rogue), ported to minibot (now defunc) by me.
+- Dumped project squid fire mage (not by me) (and the other unfinished rotations like rogue), ported to minibot (now defunc) by me. 
+- Fully deobfuscated including original comments in code.
 
 
 - Ran by known scammers Xen (not real Xen either) and Larry.
-- Exit scammed after EWT shutdown by pretending to have EWT source code 
+- Exit scammed after EWT shutdown by pretending to have EWT source code .
 
 - Full of hilariously bad code, especially anywhere you see "I'm a genius" in one of the comments.
 
