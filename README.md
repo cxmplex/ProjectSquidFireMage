@@ -14,5 +14,6 @@ Things you'll find hilarious
 - Self-boasting April fools joke in which he saves the user from a fake GM
 - Heavy copy pasting from Larry's scam rotations
 - Magic numbers and logic for basically everything
-- Massive rotation runner (why isn't this split into various components, who knows).
-- Pointless reiteration of things like unitauras for the 50 million different checks he does (this is where you should have actually used proper caching).
+- Massive rotation runner (why isn't this split into various components, who knows)
+- Pointless reiteration of things like unitauras for the 50 million different checks he does (this is where you should have actually used proper caching)
+- Perhaps the worst authentication ever made
